@@ -16,7 +16,7 @@ The simulation reveals critical insights, identifying **Aluminum 6061** as the o
 
 In precision manufacturing, machining heat can cause significant thermal expansion, leading to warping, tolerance errors, or catastrophic failure. Predicting these effects before cutting metal is critical for process optimization.
 
-This project addresses this by implementing a **Numerical Solver** that couples steady-state thermal distributions with mechanical stress analysis. By applying a **200,000 W/m² heat flux**, the model quantifies the trade-offs between thermal conductivity and structural stiffness, providing a practical framework for pre-manufacturing material selection.
+This project addresses this by implementing a numerical Solver that couples steady-state thermal distributions with mechanical stress analysis. By applying a **200,000 W/m² heat flux**, the model quantifies the trade-offs between thermal conductivity and structural stiffness, providing a practical framework for pre-manufacturing material selection.
 
 ## 🛠️ Technology Used
 
@@ -79,11 +79,6 @@ The simulation quantified critical stress concentrations at fixed boundaries, re
 | **Aluminum 6061** | **167.0** | **239.5** | **64.00** | **4.31** | **Optimal.** Thermally stable and structurally safe. |
 | **Structural Steel** | 51.9 | 400.0 | 163.23 | 1.35 | **High Risk.** Stiffness induces dangerous internal stresses. |
 | **Titanium (Ti-6Al-4V)** | 7.2 | 400.0 | 65.40 | 13.91 | **Hard-to-Cut.** Structurally safe but suffers from thermal localization. |
-
-### Performance Insights
-
-* **The "Heat Trap" Phenomenon:** Titanium reached the simulation limit of **** despite a high safety factor. This validates the occurrence of thermal localization, illustrating why Titanium is classified as "difficult-to-machine"—the workpiece survives, but the trapped heat destroys the cutting tool.
-* **Stiffness-Driven Failure:** Structural Steel demonstrated the poorest performance (SF 1.35). Its high stiffness (207 GPa) resists thermal expansion too rigidly, generating massive internal reaction forces at the boundaries.
 
 ## 🤝 Contributing
 
